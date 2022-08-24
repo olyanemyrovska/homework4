@@ -1,4 +1,4 @@
 interface Payable {
-    double calculatePay();
+    public void  calculatePay();
 
 }

@@ -2,11 +2,9 @@ public class Employee implements Payable {
   private String employeeId;
   private String name;
   double AverageMonthlySalary;
-   public double  calculatePay(){
-     double calculatedPayment =0.0d;
-     return calculatedPayment;
+  public void  calculatePay(){
   }
-  // TODO fix class declaration and declare variables here +_
+  // TODO fix class declaration and declare variables here
 
   public Employee(String employeeId, String name) {
    this.employeeId = employeeId;

@@ -34,10 +34,8 @@ public class SalariedEmployee extends Employee {
         // TODO fill in code here
     }
 
-    public double calculatePay() {
+    public void calculatePay() {
         this.AverageMonthlySalary  = getFixedMonthlyPayment();
-        //  System.out.println(AverageMonthlySalary);
-        return AverageMonthlySalary;
         // TODO fill in code here
     }
 
