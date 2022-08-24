@@ -46,7 +46,7 @@ public class ContractedEmployee extends Employee {
 @Override
   public double calculatePay() {
     this.AverageMonthlySalary = NumberOfHoursWorked * hourlyRate;
-  System.out.println(AverageMonthlySalary);
+  //System.out.println(AverageMonthlySalary);
   return AverageMonthlySalary;
     // TODO fill in code here
   }
