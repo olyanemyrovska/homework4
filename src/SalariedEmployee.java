@@ -1,27 +1,44 @@
-public class SalariedEmployee {
-  // TODO fix class declaration and declare variables here
+public class SalariedEmployee extends Employee {
+    // TODO fix class declaration and declare variables here
+    String employeeId;
+    String name;
+    String socialSecurityNumber;
+    double fixedMonthlyPayment;
 
-  public SalariedEmployee(String employeeId, String name, String socialSecurityNumber) {
-    // TODO fill in code here
-  }
 
-  public String getSocialSecurityNumber() {
-    // TODO fill in code here and replace the return statement
-    return "";
-  }
+    public SalariedEmployee(String employeeId, String name, String socialSecurityNumber) {
+        super(employeeId, name);
+        this.employeeId = employeeId;
+        this.name = name;
+        this.socialSecurityNumber = socialSecurityNumber;
+        // TODO fill in code here
+    }
 
-  public void setSocialSecurityNumber(String socialSecurityNumber) {
-    // TODO fill in code here
-  }
+    public String getSocialSecurityNumber() {
+        // TODO fill in code here and replace the return statement
+        return socialSecurityNumber;
+    }
 
-  public double getFixedMonthlyPayment() {
-    // TODO fill in code here and replace the return statement
-    return 0;
-  }
+    public void setSocialSecurityNumber(String socialSecurityNumber) {
+        this.socialSecurityNumber = socialSecurityNumber;
+        // TODO fill in code here
+    }
 
-  public void setFixedMonthlyPayment(double fixedMonthlyPayment) {
-    // TODO fill in code here
-  }
+    public double getFixedMonthlyPayment() {
+        // TODO fill in code here and replace the return statement
+        return fixedMonthlyPayment;
+    }
 
-  // TODO fill in code here
+    public void setFixedMonthlyPayment(double fixedMonthlyPayment) {
+        this.fixedMonthlyPayment = fixedMonthlyPayment;
+        // TODO fill in code here
+    }
+
+    public double calculatePay() {
+        this.AverageMonthlySalary  = getFixedMonthlyPayment();
+        System.out.println(AverageMonthlySalary);
+        return AverageMonthlySalary;
+        // TODO fill in code here
+    }
+
 }

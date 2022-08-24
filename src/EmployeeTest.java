@@ -70,7 +70,6 @@ public class EmployeeTest {
     Employee[] employees = {employee1, employee2};
     for (Employee emp : employees) {
       emp.calculatePay();
-
       assertEquals(emp.getAverageMonthlySalary(), 5000.0d, "Income is not correct for " + emp);
     }
   }
